@@ -25,7 +25,7 @@ params.append((0.16, 0.08, 0.020, 0.055))  # Unstable
 params.append((0.16, 0.08, 0.050, 0.065))  # Worms 1
 params.append((0.16, 0.08, 0.054, 0.063))  # Worms 2
 params.append((0.16, 0.08, 0.035, 0.060))  # Zebrafish
-(du, dv, f, k) = params[0]
+(du, dv, f, k) = params[1]
 
 dt = 1.
 
