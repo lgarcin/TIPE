@@ -6,7 +6,7 @@ from matplotlib.animation import ArtistAnimation, writers
 from matplotlib.collections import LineCollection
 
 N = 100
-p = .6
+p = .57
 
 grid = random((N, N)) < p
 access = ndarray((N, N))

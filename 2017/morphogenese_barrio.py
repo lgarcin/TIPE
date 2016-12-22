@@ -1,5 +1,4 @@
 from numpy.random import random
-from numpy import zeros
 from scipy.ndimage.filters import laplace
 from matplotlib.pyplot import imshow, show, figure, axis
 from matplotlib.animation import ArtistAnimation, writers

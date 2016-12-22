@@ -5,7 +5,7 @@ from scipy.ndimage.morphology import binary_dilation
 from matplotlib.animation import ArtistAnimation, writers
 
 N = 256
-p = .6
+p = .57
 
 grid = random((N, N)) < p
 access = ndarray((N, N))
@@ -35,6 +35,6 @@ while not array_equal(access, a):
 
 ani = ArtistAnimation(fig, ims, interval=10, blit=True, repeat_delay=1000)
 Writer = writers['ffmpeg']
-writer = Writer(fps=100, metadata=dict(artist='Laurent Garcin'), bitrate=18000)
+writer = Writer(fps=10, metadata=dict(artist='Laurent Garcin'), bitrate=18000)
 ani.save('perco_site.mp4', writer=writer)
 show()
