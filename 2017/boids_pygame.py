@@ -1,7 +1,15 @@
+import sys, pygame
+
+pygame.init()
+clock = pygame.time.Clock()
+
+size = width, height = 600, 600
+black = 0, 0, 0
+
+screen = pygame.display.set_mode(size)
+
 from numpy import array
 from numpy.linalg import norm
-from matplotlib.pyplot import plot, show, figure, xlim, ylim
-from matplotlib.animation import FuncAnimation
 
 
 class Boid:
@@ -59,31 +67,16 @@ class Boid:
         self.applyForce(steer)
 
 
-test = Boid(array([0., 0.]), array([2., -2.]), 1., .1)
-l = []
-target = array([40., 40.])
-N = 100
-for _ in range(N):
-    l.append(test.position.copy())
-    # target += array([.1, .1])
-    test.seek(target)
+test = Boid(array([0., 0.]), array([0., 0.]), 4., 10.)
+
+while 1:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT: sys.exit()
+
+    screen.fill(black)
+    test.seek(array(pygame.mouse.get_pos()))
     test.update()
-
-l = array(l)
-# print(l)
-# plot(l[:, 0], l[:, 1])
-
-fig = figure()
-
-xlim(min(l[:, 0]), max(l[:, 0]))
-ylim(min(l[:, 1]), max(l[:, 1]))
-p, = plot([], [], 'g-')
-
-
-def animate(i):
-    p.set_data(l[:i, 0], l[:i, 1])
-    return p,
-
-
-ani = FuncAnimation(fig, animate, range(N), interval=10, blit=True)
-show()
+    x, y = test.position[0], test.position[1]
+    pygame.draw.circle(screen, (60, 60, 100), (int(x), int(y)), 10)
+    clock.tick(30)
+    pygame.display.flip()

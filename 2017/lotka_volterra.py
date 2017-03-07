@@ -1,7 +1,7 @@
 from scipy.integrate import odeint
-from numpy import array, linspace
+from numpy import array, linspace, meshgrid
 from matplotlib.pyplot import figure, plot, grid, legend, xlabel, ylabel, suptitle, show, xlim, ylim, subplot, \
-    tight_layout, gca
+    tight_layout, gca, quiver
 from matplotlib.animation import FuncAnimation, writers
 
 a = 1.
@@ -14,11 +14,13 @@ def diff(X, t=0):
     return array([a * X[0] - b * X[0] * X[1], -c * X[1] + d * b * X[0] * X[1]])
 
 
-t = linspace(0, 15, 1000)
+t = linspace(0, 30, 2000)
 X0 = array([10, 5])
 
 X, infodict = odeint(diff, X0, t, full_output=True)
 proies, predateurs = X.T
+x, y = meshgrid(linspace(0, max(proies) * 1.1, 20), linspace(0, max(predateurs) * 1.1, 20))
+dx, dy = a * x - b * x * y, -c * y + d * b * x * y
 
 fig = figure()
 # suptitle('Evolution des populations')
@@ -42,6 +44,7 @@ xlabel('Proies')
 ylabel('Prédateurs')
 p3, = plot([], [], 'g-')
 p4, = plot([], [], 'go')
+quiver(x, y, dx, dy)
 
 tight_layout()
 
@@ -57,6 +60,6 @@ def animate(i):
 ani = FuncAnimation(fig, animate, range(len(t)), interval=10, blit=True)
 Writer = writers['ffmpeg']
 writer = Writer(fps=100, metadata=dict(artist='Laurent Garcin'), bitrate=18000)
-# ani.save('test.mp4', writer=writer)
+ani.save('test.mp4', writer=writer)
 
 show()
