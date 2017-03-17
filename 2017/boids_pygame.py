@@ -67,16 +67,16 @@ class Boid:
         self.applyForce(steer)
 
 
-test = Boid(array([0., 0.]), array([0., 0.]), 4., 10.)
+boids = Boid(array([0., 0.]), array([0., 0.]), 4., 10.)
 
 while 1:
     for event in pygame.event.get():
         if event.type == pygame.QUIT: sys.exit()
 
     screen.fill(black)
-    test.seek(array(pygame.mouse.get_pos()))
-    test.update()
-    x, y = test.position[0], test.position[1]
+    boids.seek(array(pygame.mouse.get_pos()))
+    boids.update()
+    x, y = boids.position[0], boids.position[1]
     pygame.draw.circle(screen, (60, 60, 100), (int(x), int(y)), 10)
     clock.tick(30)
     pygame.display.flip()

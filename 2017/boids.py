@@ -59,15 +59,15 @@ class Boid:
         self.applyForce(steer)
 
 
-test = Boid(array([0., 0.]), array([2., -2.]), 1., .1)
+boids = Boid(array([0., 0.]), array([2., -2.]), 1., .1)
 l = []
 target = array([40., 40.])
 N = 100
 for _ in range(N):
-    l.append(test.position.copy())
+    l.append(boids.position.copy())
     # target += array([.1, .1])
-    test.seek(target)
-    test.update()
+    boids.seek(target)
+    boids.update()
 
 l = array(l)
 # print(l)
