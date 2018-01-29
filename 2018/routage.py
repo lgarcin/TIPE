@@ -40,4 +40,8 @@ time_selfish = sum(C * flow_selfish + b)
 Q = np.bmat([[2 * C, A.T], [A, np.zeros((P, P))]])
 flow_social = (np.linalg.pinv(Q) * c)[:N]
 time_social = sum(C * flow_social + b)
+print(flow_selfish)
+print(time_selfish)
+print(flow_social)
+print(time_social)
 print(time_selfish/time_social)

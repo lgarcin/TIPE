@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e97a0e26-833f-409f-b501-460c9e357d21" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/2018/hanoi.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/2018/hanoi_animation.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/2018/routage.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/2018/routage_pulp.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/2018/routage_pyomo.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/2018/panneaux.py" afterPath="$PROJECT_DIR$/2018/panneaux.py" />
-      <change beforePath="$PROJECT_DIR$/2018/transport.py" afterPath="$PROJECT_DIR$/2018/transport.py" />
+      <change beforePath="$PROJECT_DIR$/2018/apprentissage.py" afterPath="$PROJECT_DIR$/2018/apprentissage.py" />
+      <change beforePath="$PROJECT_DIR$/2018/routage.py" afterPath="$PROJECT_DIR$/2018/routage.py" />
+      <change beforePath="$PROJECT_DIR$/2018/routage_julia.jl" afterPath="$PROJECT_DIR$/2018/routage_julia.jl" />
     </list>
     <ignored path="TIPE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +27,7 @@
       <file leaf-file-name="transport_optimal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2018/transport_optimal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="0">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -40,14 +36,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apprentissage.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="apprentissage.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2018/apprentissage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-              <folding>
-                <element signature="e#185#222#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,17 +98,27 @@
         <entry file="file://$PROJECT_DIR$/2018/routage_pulp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routage.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2018/routage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state relative-caret-position="425">
+              <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routage_pyomo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2018/routage_pyomo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,7 +183,6 @@
         <option value="$PROJECT_DIR$/2017/percolation_site_proba.py" />
         <option value="$PROJECT_DIR$/2017/boids_matplotlib.py" />
         <option value="$PROJECT_DIR$/2018/transport_optimal.py" />
-        <option value="$PROJECT_DIR$/2018/apprentissage.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/2018/my_own_private_hough.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -189,6 +192,8 @@
         <option value="$PROJECT_DIR$/2018/panneaux.py" />
         <option value="$PROJECT_DIR$/2018/routage_pyomo.py" />
         <option value="$PROJECT_DIR$/2018/routage.py" />
+        <option value="$PROJECT_DIR$/2018/routage_scipy.py" />
+        <option value="$PROJECT_DIR$/2018/apprentissage.py" />
       </list>
     </option>
   </component>
@@ -291,8 +296,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.routage (1)">
-    <configuration name="hanoi_animation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.apprentissage">
+    <configuration name="apprentissage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -304,25 +309,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TIPE" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2018/hanoi_animation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="panneaux" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2018" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TIPE" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2018/panneaux.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2018/apprentissage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -377,6 +364,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TIPE" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2018/routage_pyomo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="routage_scipy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2018" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TIPE" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2018/routage_scipy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -495,19 +500,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.hanoi_animation" />
-      <item index="1" class="java.lang.String" itemvalue="Python.panneaux" />
-      <item index="2" class="java.lang.String" itemvalue="Python.routage" />
-      <item index="3" class="java.lang.String" itemvalue="Python.routage_pyomo" />
-      <item index="4" class="java.lang.String" itemvalue="Python.routage (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.routage" />
+      <item index="1" class="java.lang.String" itemvalue="Python.routage_pyomo" />
+      <item index="2" class="java.lang.String" itemvalue="Python.routage (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.routage_scipy" />
+      <item index="4" class="java.lang.String" itemvalue="Python.apprentissage" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.routage (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.routage" />
-        <item index="2" class="java.lang.String" itemvalue="Python.routage_pyomo" />
-        <item index="3" class="java.lang.String" itemvalue="Python.panneaux" />
-        <item index="4" class="java.lang.String" itemvalue="Python.hanoi_animation" />
+        <item index="0" class="java.lang.String" itemvalue="Python.apprentissage" />
+        <item index="1" class="java.lang.String" itemvalue="Python.routage_scipy" />
+        <item index="2" class="java.lang.String" itemvalue="Python.routage (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.routage" />
+        <item index="4" class="java.lang.String" itemvalue="Python.routage_pyomo" />
       </list>
     </recent_temporary>
   </component>
@@ -537,7 +542,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2455216" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -579,20 +583,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2016/acp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2016/crypto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2016/hamming.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -787,7 +777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2018/transport_optimal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="0">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -799,16 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2018/apprentissage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-          <folding>
-            <element signature="e#185#222#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,26 +874,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2018/routage_pyomo.py">
+    <entry file="file://$PROJECT_DIR$/2018/routage_pulp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2018/routage_pulp.py">
+    <entry file="file://$PROJECT_DIR$/2018/routage_julia.jl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="-357">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/routage_scipy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="93" lean-forward="false" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2018/routage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="425">
+          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/routage_pyomo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/apprentissage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
