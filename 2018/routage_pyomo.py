@@ -1,4 +1,4 @@
-from pyomo.environ import *
+from pyomo.environ import AbstractModel, Set, Var, NonNegativeReals
 
 model = AbstractModel()
 model.vertices = Set()

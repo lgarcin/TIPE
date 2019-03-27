@@ -7,8 +7,8 @@ class Transport1D:
         N = 200
         self.dx = 1. / N
         cfl = .1
-        self.c = 100.
-        self.dt = cfl * self.dx / self.c
+        self.c = [100.] * (N // 2) + [50.] * (N - N // 2)
+        self.dt = cfl * self.dx / max(self.c)
         self.t = 0
         self.x = np.linspace(0, 1, N)
         self.u = np.sin(2 * np.pi * self.x) * 0
@@ -22,11 +22,11 @@ class Transport1D:
 
     def update(self):
         self.t += self.dt
-        if 100 * self.t - np.floor(100 * self.t) < 1 / 5:
+        if 100 * self.t - np.floor(100 * self.t) < 4 / 5:
             self.u[0] = 1
         else:
             self.u[0] = 0
-        self.u[1:] -= self.c * (1 - self.u[1:]) * (self.u[1:] - self.u[:-1]) / self.dx * self.dt
+        self.u[1:] -= self.c[1:] * (1 - self.u[1:]) * (self.u[1:] - self.u[:-1]) / self.dx * self.dt
         self.line.set_ydata(self.u)
         plt.draw()
 
@@ -64,4 +64,4 @@ class Transport1DAnimate:
         return self.line,
 
 
-tr = Transport1DAnimate()
+tr = Transport1D()

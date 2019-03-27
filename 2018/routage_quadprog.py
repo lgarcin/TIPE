@@ -1,13 +1,14 @@
+import quadprog as qp
 import numpy as np
 
 graph = {
     'vertices': range(4),
     'edges': {
-        (0, 1): (0, 1),
+        (0, 1): (1, 1),
         (1, 3): (1, 0),
-        (0, 2): (1, 0),
-        (2, 3): (0, 1),
-        (2, 1): (0, 0)
+        (0, 2): (2, 0),
+        (2, 3): (1, 1),
+        (2, 1): (1, 10)
     },
     'source': 0,
     'sink': 3
@@ -17,7 +18,7 @@ N = len(graph['edges'])
 C = np.zeros((N, N))
 for i, e in enumerate(graph['edges']):
     C[i, i] = graph['edges'][e][0]
-b = np.zeros((N, 1))
+b = np.zeros((N,))
 for i, e in enumerate(graph['edges']):
     b[i] = graph['edges'][e][1]
 
@@ -29,19 +30,9 @@ for i in graph['vertices']:
             A[i, j] = 1
         if e[1] == i:
             A[i, j] = -1
-f = np.zeros((P, 1))
+f = np.zeros((P,))
 f[graph['source']] = 1
 f[graph['sink']] = -1
 
-Q = np.bmat([[C, A.T], [A, np.zeros((P, P))]])
-c = np.bmat([[-b], [f]])
-flow_selfish = (np.linalg.pinv(Q) * c)[:N]
-time_selfish = sum(C * flow_selfish + b)
-Q = np.bmat([[2 * C, A.T], [A, np.zeros((P, P))]])
-flow_social = (np.linalg.pinv(Q) * c)[:N]
-time_social = sum(C * flow_social + b)
-print(flow_selfish)
-print(time_selfish)
-print(flow_social)
-print(time_social)
-print(time_selfish/time_social)
+print(qp.solve_qp(
+    C, -b, np.vstack([A, np.eye(N)]).T, np.hstack([f, np.zeros(N)]), P)[0])
