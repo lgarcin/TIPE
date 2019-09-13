@@ -1,11 +1,10 @@
 from dataclasses import dataclass
 
-from numpy import cos, sin, concatenate, pi, array
-from scipy.optimize import root
-
+from astropy import units as u
 from astropy.coordinates import Angle, Longitude, Latitude
 from astropy.time import Time
-from astropy import units as u
+from numpy import cos, sin, concatenate, array
+from scipy.optimize import root
 
 
 @dataclass
@@ -47,23 +46,23 @@ def localisation(heure, astres):
     return Position(longitude=Longitude(sol[0] * u.rad), latitude=Latitude(sol[1] * u.rad))
 
 
-pos = localisation(Time('2019-05-09 07:46:00', scale='utc'),
+pos = localisation(Time('2019-05-18 16:50:00', scale='utc'),
                    [
                        Astre(
-                           Angle('1h51m27s'),
-                           Angle('-10d20m5s'),
-                           Angle('135d17m0s'),
-                           Angle('20d19m0s')),
+                           Angle('7h39m18s'),
+                           Angle('5d13m38s'),
+                           Angle('202d45m52s'),
+                           Angle('44d25m41s')),
                        Astre(
-                           Angle('21h18m34s'),
-                           Angle('62d35m7s'),
-                           Angle('323d31m57s'),
-                           Angle('69d56m50s')),
+                           Angle('8h59m12s'),
+                           Angle('48d2m32s'),
+                           Angle('102d12m30s'),
+                           Angle('87d16m8s')),
                        Astre(
-                           Angle('17h34m56s'),
-                           Angle('12d33m37s'),
-                           Angle('272d47m35s'),
-                           Angle('14d20m22s')
+                           Angle('23h39m21s'),
+                           Angle('77d37m55s'),
+                           Angle('348d54m46s'),
+                           Angle('39d12m29s')
                        )
                    ])
 print(pos.latitude.degree, pos.longitude.degree)
