@@ -1,8 +1,8 @@
-from numpy.random import random, randint
-from scipy.ndimage.filters import laplace, convolve
-from matplotlib.pyplot import imshow, show, figure, axis
 from matplotlib.animation import ArtistAnimation, writers
-from numpy import ndarray, zeros, mgrid, logical_and
+from matplotlib.pyplot import imshow, show, figure, axis
+from numpy import zeros
+from numpy.random import randint
+from scipy.ndimage.filters import convolve
 
 size = (256, 256)
 u, v = zeros(size), zeros(size)

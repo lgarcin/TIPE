@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e97a0e26-833f-409f-b501-460c9e357d21" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/2019/texture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2020/empreinte.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2020/empreintes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TIPE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TIPE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018/hanoi.gif" beforeDir="false" afterPath="$PROJECT_DIR$/2018/hanoi.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2016/landscape.py" beforeDir="false" afterPath="$PROJECT_DIR$/2016/landscape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2017/belousov_zhabotinsky.py" beforeDir="false" afterPath="$PROJECT_DIR$/2017/belousov_zhabotinsky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2017/bz_spiral_ca.py" beforeDir="false" afterPath="$PROJECT_DIR$/2017/bz_spiral_ca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2017/lotka_volterra.py" beforeDir="false" afterPath="$PROJECT_DIR$/2017/lotka_volterra.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019/coquille.py" beforeDir="false" afterPath="$PROJECT_DIR$/2019/coquille.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +22,6 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="TIPE" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,12 +47,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QW7HqE6AohVKQU5VhvgUYJnZoy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Enseignement/Centrale/Cobayage Blache" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -60,19 +74,7 @@
       <recent name="E:\Documents\GitHub\TIPE\2017" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.scratch_4">
+  <component name="RunManager" selected="Python.coquille">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,7 +94,7 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="astro" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bz_spiral_ca" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TIPE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,11 +102,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2019" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2019/astro.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017/bz_spiral_ca.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,7 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="coquille" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="coquille" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIPE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,7 +136,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hanoi_animation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="empreintes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIPE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,11 +144,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2018" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2020" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2018/hanoi_animation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2020/empreintes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="morphogenese_barrio" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TIPE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,11 +165,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017/morphogenese_barrio.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,7 +178,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="morphogenese_grayscott" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TIPE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,11 +186,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017/morphogenese_grayscott.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -236,29 +238,30 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.astro" />
+      <item itemvalue="Python.bz_spiral_ca" />
+      <item itemvalue="Python.empreintes" />
+      <item itemvalue="Python.morphogenese_barrio" />
+      <item itemvalue="Python.morphogenese_grayscott" />
       <item itemvalue="Python.coquille" />
-      <item itemvalue="Python.scratch_1" />
-      <item itemvalue="Python.hanoi_animation" />
-      <item itemvalue="Python.scratch_4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scratch_4" />
-        <item itemvalue="Python.hanoi_animation" />
-        <item itemvalue="Python.astro" />
         <item itemvalue="Python.coquille" />
-        <item itemvalue="Python.scratch_1" />
+        <item itemvalue="Python.empreintes" />
+        <item itemvalue="Python.morphogenese_grayscott" />
+        <item itemvalue="Python.morphogenese_barrio" />
+        <item itemvalue="Python.bz_spiral_ca" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="E:\Documents\Dictionnaires" CustomDictionaries="1" CustomDictionary0="E:\Documents\Dictionnaires\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="1" Folder0="E:\Documents\Dictionnaires" CustomDictionaries="1" CustomDictionary0="E:\Documents\Dictionnaires\fr.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -285,13 +288,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -302,7 +304,26 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="TIPE 2018" />
     <option name="LAST_COMMIT_MESSAGE" value="TIPE 2018" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1038" height="277" key="GridCell.Tab.0.bottom" timestamp="1596210204839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1038" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596210204839" />
+    <state width="1038" height="277" key="GridCell.Tab.0.center" timestamp="1596210204839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1038" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596210204839" />
+    <state width="1038" height="277" key="GridCell.Tab.0.left" timestamp="1596210204839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1038" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596210204839" />
+    <state width="1038" height="277" key="GridCell.Tab.0.right" timestamp="1596210204839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1038" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596210204839" />
   </component>
 </project>

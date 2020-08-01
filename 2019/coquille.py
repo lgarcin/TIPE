@@ -1,10 +1,10 @@
 import numpy as np
 
 N1 = 1000
-N2 = 2000
+N2 = 10000
 
 s = np.linspace(0, 2 * np.pi, N1)
-t = np.linspace(0, 6 * np.pi, N2)
+t = np.linspace(0, 10 * np.pi, N2)
 
 S, T = np.meshgrid(s, t)
 
@@ -31,8 +31,6 @@ Y = (A * np.sin(beta) * np.sin(T) + np.cos(S + phi) * np.sin(T + Omega) * re(S) 
 
 Z = (-A * np.cos(beta) + np.cos(mu) * np.sin(S + phi) * re(S)) * np.exp(T / np.tan(alpha))
 
-from scipy.ndimage.filters import laplace
-
 
 def laplacien(x):
     # return laplace(x, mode='wrap')
@@ -42,16 +40,16 @@ def laplacien(x):
 def evol1(a, s, dt, N):
     la = []
     ls = []
-    mu = .01
+    mu = .1
     rho0 = .0025
-    sigma = (1 + np.sin(np.linspace(0, 10 * np.pi, N1))) / 2 * .11
+    sigma = (1 + np.sin(np.linspace(0, .1 * np.pi, N1))) / 2 * .11
     # sigma = .015
     nu = .002
     Da = .01
     Ds = .05
     kappa = .5
     rho = .1 * (1 + np.random.uniform(-.025, .025, N1))
-    step = 10
+    step = 5
     for n in range(N * step):
         a2 = a ** 2 / (1 + kappa * a ** 2) + rho0
         da = rho * s * a2 - mu * a + Da * laplacien(a)
@@ -90,9 +88,13 @@ def evol1(a, s, dt, N):
 
 a = np.ones(N1) * 0
 s = np.ones(N1) * 0
-la, ls = evol1(a, s, .1, N2)
+la, ls = evol1(a, s, 1, N2)
 la /= la.max(axis=0)[np.newaxis, :]
 ls /= ls.max(axis=0)[np.newaxis, :]
+
+from matplotlib.pyplot import imsave
+
+imsave("texture.jpg", ls, cmap='gray')
 
 # a = np.random.uniform(.1, .2, N1)
 # h = np.random.uniform(.1, .2, N1)

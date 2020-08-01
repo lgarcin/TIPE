@@ -1,9 +1,7 @@
-from numpy import zeros, meshgrid, roll, concatenate, sqrt, ndarray, unravel_index
-from numpy.random import normal, randint
-from matplotlib import cm
 from matplotlib.pyplot import matshow, show, figure, get_cmap, plot
 from mpl_toolkits.mplot3d.axes3d import Axes3D
-from pprint import pprint
+from numpy import zeros, meshgrid, roll, sqrt, ndarray, unravel_index
+from numpy.random import normal, randint
 
 n = 6
 a = zeros((2 ** n, 2 ** n))

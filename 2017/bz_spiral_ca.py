@@ -1,8 +1,7 @@
-from numpy.random import random, randint
-from scipy.ndimage.filters import laplace
-from matplotlib.pyplot import imshow, show, figure, axis
 from matplotlib.animation import ArtistAnimation, writers
-from numpy import ndarray, zeros, mgrid, logical_and, roll
+from matplotlib.pyplot import imshow, show, figure, axis
+from numpy import roll
+from numpy.random import random
 
 size = (256, 256)
 a, b, c = random(size), random(size), random(size)

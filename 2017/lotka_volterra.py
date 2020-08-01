@@ -1,8 +1,8 @@
-from scipy.integrate import odeint
-from numpy import array, linspace, meshgrid
-from matplotlib.pyplot import figure, plot, grid, legend, xlabel, ylabel, suptitle, show, xlim, ylim, subplot, \
-    tight_layout, gca, quiver
 from matplotlib.animation import FuncAnimation, writers
+from matplotlib.pyplot import figure, plot, grid, legend, xlabel, ylabel, show, xlim, ylim, subplot, \
+    tight_layout, gca, quiver
+from numpy import array, linspace, meshgrid
+from scipy.integrate import odeint
 
 a = 1.
 b = 0.1
