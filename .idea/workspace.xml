@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e97a0e26-833f-409f-b501-460c9e357d21" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2021/active_contour_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TIPE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TIPE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/.import/.gdignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/.import/icon.png-487276ed1e3a0c39cad0279d744ee560.md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/PSO.gd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/PSO.tscn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/Particle.gd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/Particle.tscn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/default_env.tres" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/icon.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/PSO/project.godot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/pso.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PSO.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019/texture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/2019/texture.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +49,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1QW7HqE6AohVKQU5VhvgUYJnZoy" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -53,7 +66,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../latticeboltzmann-python" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="shared-indexes" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -67,7 +80,7 @@
       <recent name="E:\Documents\GitHub\TIPE\2017" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.active_contour_model">
+  <component name="RunManager" selected="Python.pso">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,27 +163,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="morphogenese_barrio" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TIPE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017/morphogenese_barrio.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="morphogenese_grayscott" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TIPE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,6 +176,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017/morphogenese_grayscott.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pso" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIPE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2022" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2022/pso.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,16 +254,16 @@
       <item itemvalue="Python.active_contour_model" />
       <item itemvalue="Python.coquille" />
       <item itemvalue="Python.empreintes" />
-      <item itemvalue="Python.morphogenese_barrio" />
       <item itemvalue="Python.morphogenese_grayscott" />
+      <item itemvalue="Python.pso" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pso" />
         <item itemvalue="Python.active_contour_model" />
         <item itemvalue="Python.coquille" />
         <item itemvalue="Python.empreintes" />
         <item itemvalue="Python.morphogenese_grayscott" />
-        <item itemvalue="Python.morphogenese_barrio" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +299,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">

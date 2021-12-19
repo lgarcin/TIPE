@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://PSO.gd" type="Script" id=2]
+
+[node name="PSO" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Obstacle" parent="." instance=ExtResource( 1 )]
+position = Vector2( 197, 147 )
+
+[node name="Obstacle2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 437, 153 )
+
+[node name="Obstacle3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 314, 148 )
+
+[node name="Obstacle4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 566, 156 )
+
+[node name="Obstacle5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 199, 440 )
+
+[node name="Obstacle6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 318, 445 )
+
+[node name="Obstacle7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 431, 443 )
+
+[node name="Obstacle8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 575, 446 )
+
+[node name="Obstacle9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 702, 154 )
+
+[node name="Obstacle10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 828, 145 )
+
+[node name="Obstacle11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 708, 437 )
+
+[node name="Obstacle12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 843, 443 )
