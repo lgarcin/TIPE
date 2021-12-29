@@ -7,37 +7,37 @@
 script = ExtResource( 2 )
 
 [node name="Obstacle" parent="." instance=ExtResource( 1 )]
-position = Vector2( 197, 147 )
+position = Vector2( 208, 104 )
 
 [node name="Obstacle2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 437, 153 )
+position = Vector2( 464, 104 )
 
 [node name="Obstacle3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 314, 148 )
+position = Vector2( 336, 104 )
 
 [node name="Obstacle4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 566, 156 )
+position = Vector2( 592, 104 )
 
 [node name="Obstacle5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 199, 440 )
+position = Vector2( 208, 496 )
 
 [node name="Obstacle6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 318, 445 )
+position = Vector2( 336, 496 )
 
 [node name="Obstacle7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 431, 443 )
+position = Vector2( 464, 496 )
 
 [node name="Obstacle8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 575, 446 )
+position = Vector2( 592, 496 )
 
 [node name="Obstacle9" parent="." instance=ExtResource( 1 )]
-position = Vector2( 702, 154 )
+position = Vector2( 720, 104 )
 
 [node name="Obstacle10" parent="." instance=ExtResource( 1 )]
-position = Vector2( 828, 145 )
+position = Vector2( 848, 104 )
 
 [node name="Obstacle11" parent="." instance=ExtResource( 1 )]
-position = Vector2( 708, 437 )
+position = Vector2( 720, 496 )
 
 [node name="Obstacle12" parent="." instance=ExtResource( 1 )]
-position = Vector2( 843, 443 )
+position = Vector2( 848, 496 )

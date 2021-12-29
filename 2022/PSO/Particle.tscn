@@ -4,13 +4,15 @@
 [ext_resource path="res://Particle.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 8.0
 
 [node name="Particle" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2( 0.1, 0.1 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -4.76837e-07, -4.76837e-07 )
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
