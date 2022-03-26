@@ -8,13 +8,14 @@ var gbest_obj: float = INF
 var c1 = .1
 var c2 = .1
 var w = .8
+var start=false
 
 func _ready():
 	rng.randomize()
 	for i in 10:
-		for j in 6:
+		for j in 5:
 			var new_particle = particle.instance()
-			var pos = Vector2((i+1)*100,j*100)
+			var pos = Vector2((i+1)*130,(j+1)*100)
 			var obj = objective_function(pos)
 			new_particle.global_position = pos
 			new_particle.pbest = pos
@@ -25,17 +26,20 @@ func _ready():
 			add_child(new_particle)
 
 func _physics_process(delta):
-	for particle in get_children():
-		if particle is Particle:
-			var obj = objective_function(particle.global_position)
-			if obj < particle.pbest_obj:
-				particle.pbest=particle.global_position
-				particle.pbest_obj=obj
-			if obj<gbest_obj:
-				gbest=particle.pbest
-				gbest_obj=obj
-			#particle.velocity=w*particle.velocity+c1*rng.randf()*(particle.pbest-particle.global_position)+c2*rng.randf()*(gbest-particle.global_position)
-			particle.velocity=w*particle.velocity+c1*rng.randf()*derivative(particle.global_position)+c2*rng.randf()*(gbest-particle.global_position)
+	if Input.is_action_just_pressed("ui_accept"):
+		start = true
+	if start:
+		for particle in get_children():
+			if particle is Particle:
+				var obj = objective_function(particle.global_position)
+				if obj < particle.pbest_obj:
+					particle.pbest=particle.global_position
+					particle.pbest_obj=obj
+				if obj<gbest_obj:
+					gbest=particle.pbest
+					gbest_obj=obj
+				#particle.velocity=w*particle.velocity+c1*rng.randf()*(particle.pbest-particle.global_position)+c2*rng.randf()*(gbest-particle.global_position)
+				particle.velocity=w*particle.velocity+c1*rng.randf()*derivative(particle.global_position)+c2*rng.randf()*(gbest-particle.global_position)
 
 
 #func _process(delta):

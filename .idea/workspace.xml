@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e97a0e26-833f-409f-b501-460c9e357d21" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2022/PSO.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/.import/.gdignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/.import/icon.png-487276ed1e3a0c39cad0279d744ee560.md5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/PSO.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/PSO.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/Particle.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/Particle.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/default_env.tres" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/icon.png.import" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/PSO/project.godot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/pso.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PSO.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TIPE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TIPE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022/PSO.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022/PSO/PSO.gd" beforeDir="false" afterPath="$PROJECT_DIR$/2022/PSO/PSO.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022/pso.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022/pso.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PSO.gif" beforeDir="false" afterPath="$PROJECT_DIR$/PSO.gif" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

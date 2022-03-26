@@ -11,15 +11,15 @@ def obstacle(x, y, lx, ly):
 
 def f(x, y):
     "Objective function"
-    res = np.abs(x)+.8*np.abs(y-2.5)
+    res = np.abs(x)+np.abs(y-2.5)
     for i in (1, 2, 3, 4):
-        res += 5*obstacle(i, 0, .1, 1.5)(x, y)
-        res += 5*obstacle(i, 5, .1, 1.5)(x, y)
+        res += 100*obstacle(i, 0, .1, 1.5)(x, y)
+        res += 100*obstacle(i, 5, .1, 1.5)(x, y)
     return res
 
 
 def hill(u):
-    return u
+    #return u
     return u/(1+np.linalg.norm(u, axis=0))
 
 
@@ -37,8 +37,8 @@ x_min = x.ravel()[z.argmin()]
 y_min = y.ravel()[z.argmin()]
 
 # Hyper-parameter of the algorithm
-c1 = .5
-c2 = 0.1
+c1 = 0.5
+c2 = 0.5
 w = 0.8
 
 # Create particles
