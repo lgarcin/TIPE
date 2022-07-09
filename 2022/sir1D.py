@@ -1,5 +1,4 @@
-from pde import FieldCollection, PDEBase, PlotTracker, ScalarField, UnitGrid, plot_kymographs, MemoryStorage
-import matplotlib.pyplot as plt
+from pde import FieldCollection, PDEBase, ScalarField, UnitGrid, plot_kymographs, MemoryStorage
 
 
 class SIRPDE(PDEBase):
@@ -29,17 +28,17 @@ class SIRPDE(PDEBase):
     def evolution_rate(self, state, t=0):
         s, i, r = state
         diff = self.diffusivity
-        ds_dt = diff * s.laplace(self.bc) - self.beta * i * s
+        ds_dt = 0*diff * s.laplace(self.bc) - self.beta * i * s
         di_dt = diff * i.laplace(self.bc) + self.beta * i * s - self.gamma * i
-        dr_dt = diff * r.laplace(self.bc) + self.gamma * i
+        dr_dt = 0*diff * r.laplace(self.bc) + self.gamma * i
         return FieldCollection([ds_dt, di_dt, dr_dt])
 
 
-beta, gamma, diffusivity = 2., 1., 0.1
+beta, gamma, diffusivity = 2., .1, 1.
 eq = SIRPDE(beta=beta, gamma=gamma, diffusivity=diffusivity)
 
 # initialize state
-grid = UnitGrid([32])
+grid = UnitGrid([128])
 s = ScalarField(grid, 1)
 i = ScalarField(grid, 0)
 i.data[0] = 1
@@ -49,7 +48,3 @@ state = eq.get_state(s, i)
 storage = MemoryStorage()
 sol = eq.solve(state, t_range=50, dt=1e-2, tracker=["progress", storage.tracker(1)])
 plot_kymographs(storage, vmin=0, vmax=1, filename="sir1D.png")
-
-R0 = beta / gamma
-c = 2 * (diffusivity * (beta - gamma)) ** .5
-print(c)

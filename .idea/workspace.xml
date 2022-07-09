@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e97a0e26-833f-409f-b501-460c9e357d21" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/2022/sir1D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/sir1D.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/sir2D.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2022/sir2D.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/sirb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2022/sirb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022/sir1D.png" beforeDir="false" afterPath="$PROJECT_DIR$/2022/sir1D.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2022/sir1D.py" beforeDir="false" afterPath="$PROJECT_DIR$/2022/sir1D.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <recent name="E:\Documents\GitHub\TIPE\2017" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sir1D">
+  <component name="RunManager" selected="Python.morphogenese_grayscott">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,7 +93,7 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="active_contour_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="morphogenese_grayscott" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIPE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,32 +101,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2017" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021/active_contour_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pso" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TIPE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2022" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2022/pso.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2017/morphogenese_grayscott.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,6 +177,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sirb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TIPE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2022" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2022/sirb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <module name="TIPE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,19 +244,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.morphogenese_grayscott" />
+      <item itemvalue="Python.sirb" />
       <item itemvalue="Python.sir1D" />
       <item itemvalue="Python.sir2D" />
       <item itemvalue="Python.sir2D (1)" />
-      <item itemvalue="Python.active_contour_model" />
-      <item itemvalue="Python.pso" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.morphogenese_grayscott" />
         <item itemvalue="Python.sir1D" />
+        <item itemvalue="Python.sirb" />
         <item itemvalue="Python.sir2D (1)" />
         <item itemvalue="Python.sir2D" />
-        <item itemvalue="Python.pso" />
-        <item itemvalue="Python.active_contour_model" />
       </list>
     </recent_temporary>
   </component>
