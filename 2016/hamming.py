@@ -14,14 +14,14 @@ H = matrix([[0, 0, 0, 1, 1, 1, 1], [0, 1, 1, 0, 0, 1, 1], [1, 0, 1, 0, 1, 0, 1]]
 # Matrice de décodage
 R = matrix([[0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1]])
 # Probabilité d'erreur
-p = 0.03
+p = 0.01
 
 # Transforme une image en une matrice de bits
 def imageToBits(image):
     a = bitarray()
     a.frombytes(bytes(image.flatten()))
     m = matrix(a.tolist()) * 1
-    m.resize((a.length() / 4, 4))
+    m.resize((len(a) // 4, 4))
     return m.transpose()
 
 # Transforme une matrice de bits en image
@@ -34,7 +34,7 @@ def stringToBits(byteString):
     a = bitarray()
     a.frombytes(byteString)
     m = matrix(a.tolist()) * 1
-    m.resize((a.length() / 4, 4))
+    m.resize((len(a) // 4, 4))
     return m.transpose()
 
 # Transforme une matrice de bits en chaîne de caractères
