@@ -2,7 +2,7 @@ import random
 from collections import defaultdict
 
 
-class RPSEngine(object):
+class RPSEngine:
     RPS = {
         "R": "P",
         "P": "S",
