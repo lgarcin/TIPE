@@ -45,8 +45,15 @@ class Player(object):
 rps_engine = RPSEngine()
 player = Player()
 
+player_score = 0
+engine_score = 0
 while True:
     inp = player.play()
     out = rps_engine.decide()
     print(out)
     rps_engine.learn(inp)
+    if rps_engine.RPS[inp] == out:
+        engine_score += 1
+    if rps_engine.RPS[out] == inp:
+        player_score += 1
+    print(f"Player score : {player_score} / Engine score : {engine_score}")
