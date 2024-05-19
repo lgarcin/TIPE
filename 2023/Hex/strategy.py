@@ -60,7 +60,11 @@ class MiniMaxStrategy(Strategy):
 
     def minimax(self, grid, depth, orientation=None):
         opposite = Orientation.COL if orientation == Orientation.ROW else Orientation.ROW
-        if depth == 0 or grid.is_winner(orientation):
+        if grid.is_winner(orientation):
+            return (None, np.inf) if orientation == Orientation.ROW else (None, -np.inf)
+        if grid.is_winner(opposite):
+            return (None, -np.inf) if orientation == Orientation.ROW else (None, np.inf)
+        if depth == 0:
             return None, self.evaluation(grid, orientation)
         nb_rows, nb_cols = grid.shape
         best = (None, -np.inf) if orientation == Orientation.ROW else (None, np.inf)
@@ -70,9 +74,9 @@ class MiniMaxStrategy(Strategy):
                 if g[i, j] == 0:
                     g[i, j] = orientation
                     _, value = self.minimax(g, depth - 1, opposite)
-                    if orientation == Orientation.ROW and value > best[1]:
+                    if orientation == Orientation.ROW and value >= best[1]:
                         best = (i, j), value
-                    if orientation == Orientation.COL and value < best[1]:
+                    if orientation == Orientation.COL and value <= best[1]:
                         best = (i, j), value
         return best
 
